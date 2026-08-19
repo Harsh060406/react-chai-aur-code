@@ -3,14 +3,15 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
+import Card from './components/Card'
 
 function App() {
+  let myObj = {
+    username: "Harsh"
+  }
+  let arr = [1,2,3]
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-900 text-white">
-      <h1 className="text-3xl font-bold text-emerald-400">
-        Tailwind is working! 🎉
-      </h1>
-    </div>
+    <Card username="Harsh" someObj = {arr} age = "20" />
   )
 }
 
